@@ -14,10 +14,8 @@ const LeftPanel = () => {
   function extractMenuItems(
     text: string
   ): { name: string; description: string; price: number | null }[] {
-    // Regular expression pattern to match menu item lines with prices
     const menuItemPattern = /^([\w\s]+):\s*(.*?)(?:\s*-\s*\$([\d.]+))?$/gm;
 
-    // Array to store extracted menu items
     const menuItems: {
       name: string;
       description: string;
@@ -26,12 +24,11 @@ const LeftPanel = () => {
 
     let match;
     while ((match = menuItemPattern.exec(text)) !== null) {
-      // Extract the name, description, and price from the matched line
       const name: string = match[1].trim();
       const description: string = match[2].trim();
-      const price: number | null = match[3] ? parseFloat(match[3]) : null; // Convert price to a number, if available
+      const price: number | null = match[3] ? parseFloat(match[3]) : null; 
 
-      // Create a menu item object and add it to the array
+    
       const menuItem = {
         name,
         description,
