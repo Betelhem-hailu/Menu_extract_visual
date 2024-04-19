@@ -1,5 +1,5 @@
 import React from 'react';
-import { Node, NodeProps } from 'reactflow';
+import { NodeProps } from 'reactflow';
  
 type NodeData = {
   value: number;
