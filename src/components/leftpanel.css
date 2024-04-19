@@ -1,8 +1,7 @@
 .left_wrapper{
     width: 30vw;
-    margin: 20px;
+    margin: 20px; 
     padding: 10px;
-    /* border: 1px solid greenyellow; */
 }
 
 .top_section{
@@ -78,29 +77,74 @@
   .list_section{
     padding-top: 20px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
   }
 
   .menu_items{
+    padding: 0;
+    overflow-x: hidden;
+    flex-wrap: wrap;
     list-style: none;
     gap: 10px;
-    /* position: fixed; */
     overflow-y: scroll;
-    height: 650px;
+    max-width: 500px;
+    max-height: 500px;
   }
 
   .item{
-    position: relative;
-    width: 400px;
+    max-width: 400px;
     padding: 5px;
     color: black;
     margin: 16px;
     border-radius: 10px;
-    line-height: 3em;
+    line-height: 2em;
     border: 2px solid rgba(116, 250, 127, 0.5);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
       rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-      display: flex;
-      justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
   }
+
+  @media screen and (max-width: 768px) {
+    .left_wrapper {
+      width: 90vw;
+      margin: 10px; 
+      padding: 5px;
+    }
+    
+    .input {
+      max-width: 100%;
+    }
+    
+    .item {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .top_section {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .input {
+      height: 60px;
+      font-size: 16px;
+      padding: 10px;
+    }
+    
+    .extract_button {
+      width: 150px;
+      height: 40px;
+      font-size: 16px;
+    }
+    
+    .menu_items {
+      height: auto;
+      overflow-y: visible;
+    }
+  }
+  

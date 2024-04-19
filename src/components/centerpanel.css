@@ -50,3 +50,71 @@
 .duplicate:disabled{
     opacity:  0.5;
 }
+
+
+@media screen and (max-width: 768px) {
+    .center_wrapper {
+      width: 90vw;
+      margin: 10px;
+      padding: 5px;
+    }
+    
+    .tools {
+      justify-content: center;
+    }
+    
+    .button {
+      font-size: 14px;
+      padding: 0.6em 1em 0.6em 1em;
+    }
+    
+    .add {
+      width: 100px;
+      height: 25px;
+    }
+    
+    .delete {
+      width: 180px;
+      height: 25px;
+    }
+    
+    .duplicate {
+      width: 200px;
+      height: 25px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .center_wrapper {
+      width: 90vw;
+      margin: 10px;
+      padding: 5px;
+    }
+    
+    .tools {
+      flex-direction: column;
+      gap: 5px;
+      align-items: center;
+    }
+    
+    .button {
+      font-size: 12px;
+      padding: 0.5em 1em 0.5em 1em;
+    }
+    
+    .add {
+      width: 80px;
+      height: 20px;
+    }
+    
+    .delete {
+      width: 150px;
+      height: 20px;
+    }
+    
+    .duplicate {
+      width: 180px;
+      height: 20px;
+    }
+  }
+  

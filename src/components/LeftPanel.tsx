@@ -74,7 +74,7 @@ const LeftPanel = () => {
         </button>
         <p>
           Example input:
-          <br />" Starters: - Caesar Salad: Fresh romaine lettuce with Caesar
+          <br />" Starters: -Fresh romaine lettuce with Caesar
           dressing. - $6.99"
         </p>
       </div>
