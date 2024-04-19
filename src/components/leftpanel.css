@@ -1,0 +1,106 @@
+.left_wrapper{
+    width: 30vw;
+    margin: 20px;
+    padding: 10px;
+    /* border: 1px solid greenyellow; */
+}
+
+.top_section{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction:  column;
+    gap: 30px;
+    align-items: center;
+}
+
+.error{
+    color: red;
+}
+
+.input {
+    width: 100%;
+    max-width: 420px;
+    height: 80px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+  }
+  
+  .input:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+  }
+  
+  .input:active {
+    transform: scale(0.95);
+  }
+  
+  .input:focus {
+    border: 2px solid grey;
+  }
+
+
+  .extract_button {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    cursor: pointer;
+  }
+
+  
+  .extract_button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+  }
+  
+  .extract_button:active {
+    box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+  }
+
+
+
+  .list_section{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .menu_items{
+    list-style: none;
+    gap: 10px;
+    /* position: fixed; */
+    overflow-y: scroll;
+    height: 650px;
+  }
+
+  .item{
+    position: relative;
+    width: 400px;
+    padding: 5px;
+    color: black;
+    margin: 16px;
+    border-radius: 10px;
+    line-height: 3em;
+    border: 2px solid rgba(116, 250, 127, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+      display: flex;
+      justify-content: space-between;
+  }

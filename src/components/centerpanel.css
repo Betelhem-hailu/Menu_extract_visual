@@ -1,0 +1,52 @@
+.center_wrapper{
+    width: 70vw;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid greenyellow;
+}
+
+.tools{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em 1.2em 0.7em 1.2em;
+    color: white;
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.add{
+    width: 120px;
+    height: 30px;
+    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+}
+
+.delete{
+    width: 220px;
+    height: 30px;
+    background: linear-gradient(0deg, rgb(167, 20, 20) 0%, rgb(247, 102, 102) 100%);
+    box-shadow: 0 0.7em 1.5em -0.5em #a7141498;
+}
+
+.duplicate{
+    width: 250px;
+    height: 30px;
+    background: linear-gradient(0deg, rgb(138, 20, 167) 0%, rgb(194, 102, 247) 100%);
+    box-shadow: 0 0.7em 1.5em -0.5em #7d14a798;
+}
+
+.delete:disabled,
+.duplicate:disabled{
+    opacity:  0.5;
+}
